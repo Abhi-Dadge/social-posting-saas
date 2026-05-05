@@ -1,0 +1,15 @@
+name = "social-backend"
+main = "worker.ts"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "social_db"
+database_id = "3c93cad4-9e19-4af7-ae3f-bbc4bbc8b19f"
+
+[triggers]
+crons = ["*/1 * * * *"]
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "social-images"
